@@ -34,8 +34,9 @@ This repository contains the code and analysis for my study of the Cepheid varia
 
 ## Acknowledgments
 Special thanks to the UCLA Astro 180 Laboratory for providing the instrumentation and support needed for this project. 
-In particular Professor: Dr. Pradip Gatkine
-Teaching assistants: Nicholas Ferraro and Aidan Gibbs 
+
+In particular:  Professor: Dr. Pradip Gatkine, 
+Teaching assistants: Nicholas Ferraro and Aidan Gibbs, 
 Group Members: Osmin Caceres and Ian Keyes
 
 
