@@ -7,7 +7,7 @@ Hello and thank you for visiting my portfolio! This repository is a showcase of 
 I am a driven and curious professional with a passion for exploring the universe through science and technology. My academic foundation in astrophysics has provided me with a strong command of data analysis, coding, and mathematical modeling, while my hands-on engineering experience has honed my practical skills in designing, building, and optimizing systems. With this portfolio, I aim to demonstrate my ability to tackle intricate challenges and deliver innovative solutions.
 
 ### Key Highlights of My Background:
-- **Astrophysics Research**: Extensive experience analyzing variable stars, including Cepheid variables like CY Aquarii, using advanced photometric techniques.
+- **Astrophysics Research**: Extensive experience analyzing variable stars, modeling, and experimental testing of wavefront sensors.
 - **Data Analysis**: Proficient in Python, Jupyter Notebooks, and tools like NumPy, Pandas, Matplotlib, and Astropy for scientific computing and visualization.
 - **Engineering Projects**: Applied knowledge of system design and optimization to solve technical problems and improve workflows.
 - **Technical Communication**: Strong ability to distill complex concepts into clear, concise deliverables for technical and non-technical audiences alike.
@@ -16,7 +16,7 @@ I am a driven and curious professional with a passion for exploring the universe
 Here are a few categories of projects you can explore:
 
 ### 1. **Astrophysics Research**
-- Analysis of variable stars, focusing on constructing light curves, determining pulsation periods, and calibrating photometric data.
+- Analysis of variable stars, focusing on constructing light curves, determining pulsation periods, tracking celestial objects, and calibrating photometric data.
 - Hands-on experience with observational data from telescopes and advanced techniques in differential photometry.
 
 ### 2. **Data Science and Programming**
