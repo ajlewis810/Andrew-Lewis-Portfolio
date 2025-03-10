@@ -1,4 +1,4 @@
-#This is the main page I am going to use for the Project 2 code
+#This is the main page I am going to use for the Project 4 python code when originally written
 
 #import the necessary packages 
 from astropy.io import fits 
@@ -94,29 +94,47 @@ ax.set_xlabel("RA")
 ax.set_ylabel("DEC")
 
 ax.grid(color = 'white', ls = 'dashed', lw = .1)
-plt.show()
+
 
 #Ok so now we have the color graph now we need to do the second part of the assignemnt. 
 #loading in the phot and spec data so that we can work with it 
 
 phot_table = fits.open('asu.fit')
 phot_data = phot_table[1].data
-
-
 phot_coords = SkyCoord(ra = phot_data['RAJ2000'], dec = phot_data['DEJ2000'], unit = (u.deg, u.deg))
 
-x1,y1 = wcs.world_to_pixel(phot_coords)
-ax.scatter(x1,y1,s=5,marker='x',color = 'red', alpha=0.1, label = "Photmetric RedShift")
+
+
+
+
+
+ax.scatter(phot_data['RAJ2000'], phot_data['DEJ2000'], 
+             transform=ax.get_transform('world'),  
+             s=5, marker='x', color='red', alpha=0.2,label = "photometric redshift")
+
+
+ax.legend(["Photometric Redshift"], loc="upper right")
+
+
+
+
+
+
+
 
 spec_table = fits.open('asus.fit')
+
+
+
 spec_data = spec_table[1].data
 spec_coords = SkyCoord(ra = spec_data['RAJ2000'], dec = spec_data['DEJ2000'], unit = (u.deg, u.deg))
 
 
-x2,y2 = wcs.world_to_pixel(spec_coords)
+x2, y2 = wcs.world_to_pixel(spec_coords)
 
-ax.scatter(x2, y2, s=5, marker = 'x', color = 'green', alpha = 1, label = "spectrooscopic redshif")
-#Plots the two scatter pltos overlayed on one another. 
+ax.scatter(x2, y2, s=15, marker = 'x', color = 'green', alpha = .8, label = "spectroscopic redshift")
+
+# #Plots the two scatter pltos overlayed on one another. 
 ax.legend()
 plt.show()
 
