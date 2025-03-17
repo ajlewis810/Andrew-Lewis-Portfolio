@@ -124,8 +124,6 @@ ax.legend(["Photometric Redshift"], loc="upper right")
 
 spec_table = fits.open('asus.fit')
 
-
-
 spec_data = spec_table[1].data
 spec_coords = SkyCoord(ra = spec_data['RAJ2000'], dec = spec_data['DEJ2000'], unit = (u.deg, u.deg))
 
